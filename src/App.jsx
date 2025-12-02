@@ -13,7 +13,7 @@ function App() {
 
        <Contact/>
 
-     <Contact/> 
+     {/* <Contact/>  */}
 
        {/* <Logos/> */}
        <Review/> 
