@@ -8,9 +8,9 @@ function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <div className='w-full h-screen font-sora'>
+    <div className='w-full h-fit font-sora'>
        <AboutUs/>
-       {/* <Contact/> */}
+       <Contact/>
        {/* <Logos/> */}
        {/* <Review/> */}
     </div>
