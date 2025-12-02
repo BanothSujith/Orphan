@@ -117,18 +117,19 @@ function AboutUs() {
           <div className="flex flex-col gap-4 ">
             <p className="text-[#555555] leading-8 font-medium flex flex-col gap-6">
               <span>
-                Duis sed odio sit amet nibh vulputate cursus a amet ma accumsan
-                ipsuy veli Nam nec tellus per coec tellus. curs a amet mauli
-                accumsan ipsuy veli Nam nec tell cumsan suy veli Nam per coec
-                tellusnec perus.
+                Sit down without worry at the place of the course, with some
+                accumulation of effort. Take notice carefully, as it is
+                important to follow the course and maintain the accumulation
+                consistently.
               </span>
               <span>
-                a odio tincidunt auct ursus a amet mauris Mor ipsuy veli Nam nec
-                tell cumsan ipsuy veli Nam nec perus.
+                With careful attention, take action in a disciplined manner.
+                Maintain consistency and awareness in your efforts to achieve
+                progress
               </span>
             </p>
             <h1 className="text-3xl font-bold pt-12 leading-9">
-              Barlim Qoarli
+              Banoth sujith
             </h1>
             <p className="uppercase text-[#666] ">charitable trust director</p>
             <p className="p-4 border w-fit">signature</p>

@@ -10,11 +10,11 @@ function App() {
   return (
     <div className='w-full h-fit font-sora'>
        <AboutUs/>
-<<<<<<< HEAD
+
        <Contact/>
-=======
+
      <Contact/> 
->>>>>>> 85adb9ba23b855790a7c02d83c9e08264608aefb
+
        {/* <Logos/> */}
        <Review/> 
     </div>
