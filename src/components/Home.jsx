@@ -36,7 +36,7 @@ function Home() {
         navigate(`/${el}`)
     }
   return (
-    <div className="flex flex-col md:gap-18">
+    <div className="flex flex-col gap-12 md:gap-18">
       <div className="relative w-full min-h-[40vh] md:min-h-fit lg:min-h-[100vh] overflow-hidden">
         <img
           src={bgForAbout}
@@ -57,7 +57,7 @@ function Home() {
         </div>
       </div>
       {/* after hero section */}
-      <div className="flex flex-col gap-2 justify-center items-center uppercase text-center px-10 md:px-20 lg:px-44">
+      <div className="flex flex-col gap-2 justify-center items-center uppercase text-center px-12 md:px-20 lg:px-44">
         <IoLogoVimeo className="text-4xl text-[#ff3636]" />
         <span className="text-[#999999]  font-bold">Charity Services</span>
         <p className="text-[#212529]  text-2xl md:text-[2.5rem] font-semibold">
