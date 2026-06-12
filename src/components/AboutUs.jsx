@@ -88,8 +88,8 @@ function AboutUs() {
 
   return (
     <div className="w-full h-full flex flex-col gap-24 ">
-      <div className="relative w-full min-h-[40vh] md:min-h-fit lg:min-h-[100vh] ">
-        <img src={bgForAbout} alt="background" className="w-full h-[40vh] md:h-full " />
+      <div className="relative w-full min-h-[50vh] md:min-h-fit lg:min-h-[100vh] ">
+        <img src={bgForAbout} alt="background" className="w-full h-[50vh] md:h-full " />
         <div className="absolute top-0 bg-black/60 w-full h-full flex flex-col justify-end  px-12 lg:px-36">
           <div className="border-b-4 border-white pb-4 md:pb-14">
             <h2 className="text-3xl md:text-6xl text-white  ">About Us</h2>

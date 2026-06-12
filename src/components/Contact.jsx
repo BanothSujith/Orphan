@@ -63,11 +63,11 @@ function Contact() {
 
   return (
     <div className="flex flex-col md:gap-18">
-      <div className="relative w-full min-h-[40vh] md:min-h-fit lg:min-h-[100vh]">
+      <div className="relative w-full min-h-[50vh] md:min-h-fit lg:min-h-[100vh]">
         <img
           src={bgForAbout}
           alt="Background"
-          className="w-full h-[40vh] md:h-full max-h-[100vh] object-top "
+          className="w-full h-[50vh] md:h-full max-h-[100vh] object-top "
         />
         <div className="absolute top-0  bg-black/60 w-full h-full flex flex-col justify-end px-4 lg:px-36">
           <div className="border-b-4 border-white pb-6 lg:pb-14">

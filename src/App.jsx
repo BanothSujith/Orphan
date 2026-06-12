@@ -15,7 +15,7 @@ function App() {
       {/* <AboutUs/> */}
       {/* <Home /> */}
       <Routers />
-      <div className="fixed top-2 w-full z-[30]">
+      <div className="fixed top-0 md:top-2 w-full z-[30]">
         <Navbar />
       </div>
       {/* <Contact/> */}
