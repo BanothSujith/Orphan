@@ -88,12 +88,12 @@ function AboutUs() {
 
   return (
     <div className="w-full h-full flex flex-col gap-24 ">
-      <div className="relative w-full min-h-[60vh] lg:min-h-[95vh]">
-        <img src={bgForAbout} className="w-full h-full" />
-        <div className="absolute top-0 bg-black/30 w-full h-full flex flex-col justify-end  px-12 lg:px-36">
+      <div className="relative w-full min-h-[40vh] md:min-h-fit lg:min-h-[100vh] ">
+        <img src={bgForAbout} alt="background" className="w-full h-[40vh] md:h-full " />
+        <div className="absolute top-0 bg-black/60 w-full h-full flex flex-col justify-end  px-12 lg:px-36">
           <div className="border-b-4 border-white pb-4 md:pb-14">
-            <h2 className="text-6xl text-white  ">About Us</h2>
-            <p className="text-[1rem] text-white ">
+            <h2 className="text-3xl md:text-6xl text-white  ">About Us</h2>
+            <p className=" text-sm md:text-[1rem] text-white ">
               Organisations committed to ending poverty worldwide.
             </p>
           </div>
@@ -245,7 +245,7 @@ function AboutUs() {
         </p>
         <Review />
       </div>
-      <div className="px-18 pb-12">
+      <div className="pb-12">
         <Logos />
       </div>
       {showScroll && (

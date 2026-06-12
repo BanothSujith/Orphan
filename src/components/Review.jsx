@@ -62,8 +62,8 @@ const Review = () => {
       {
         breakpoint: 768,
         settings: {
-          slidesToShow: 1,
-          centerMode:false,
+          slidesToShow: 3,
+          centerMode:true,
           slidesToScroll: 1,
           initialSlide:1,
         },
@@ -73,7 +73,7 @@ const Review = () => {
 
   return (
     <div className="flex flex-col gap-6 items-center justify-center py-10 w-full overflow">
-      <Slider {...settings} className=" w-24 md:w-full  lg:w-[55%]">
+      <Slider {...settings} className=" w-3/4 md:w-full  lg:w-[55%]">
         {reviews.map((item, i) => (
           <div key={i} className="flex flex-col items-center py-5">
             <div

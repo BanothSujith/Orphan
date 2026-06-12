@@ -1,5 +1,5 @@
 import React, { useState,useEffect } from "react";
-import bgForAbout from "../assets/bgforAboutus.png";
+import bgForAbout from "../assets/bgforcontact.png";
 import { BsTelephoneFill } from "react-icons/bs";
 import { MdMail } from "react-icons/md";
 import { IoLocationOutline } from "react-icons/io5";
@@ -40,7 +40,7 @@ function Contact() {
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
-
+ const navigate = useNavigate();
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log("Form Data Submitted:", formData);
@@ -63,23 +63,21 @@ function Contact() {
 
   return (
     <div className="flex flex-col md:gap-18">
-      <div className="relative w-full min-h-[60vh] lg:h-[95vh]">
+      <div className="relative w-full min-h-[40vh] md:min-h-fit lg:min-h-[100vh]">
         <img
           src={bgForAbout}
-          className="w-full h-[60vh] lg:h-full object-fill"
           alt="Background"
+          className="w-full h-[40vh] md:h-full max-h-[100vh] object-top "
         />
-        <div className="absolute top-0  bg-black/30 w-full h-full flex flex-col justify-end px-4 lg:px-36">
+        <div className="absolute top-0  bg-black/60 w-full h-full flex flex-col justify-end px-4 lg:px-36">
           <div className="border-b-4 border-white pb-6 lg:pb-14">
-            <h2 className="text-4xl md:text-6xl font-bold text-white">
-              Contact Us
-            </h2>
-            <p className=" text-lg text-white">
+            <h2 className="text-3xl md:text-6xl text-white ">Contact Us</h2>
+            <p className=" text-sm md:text-lg text-white">
               Organisations committed to ending poverty worldwide.
             </p>
           </div>
           <div className="flex gap-4 items-center py-6 text-white">
-            <Link to="\">Home</Link>
+            <button onClick={() => navigate("/")}>Home</button>
             <span>-</span>
             <span>Contact Us</span>
           </div>
@@ -107,7 +105,7 @@ function Contact() {
         ))}
       </div>
 
-      <div className="flex flex-col gap-1 items-center">
+      <div className="flex flex-col gap-1 items-center mt-16 md:mt-4">
         <span className="text-[#999] font-bold uppercase">
           If you have any questions
         </span>
@@ -119,16 +117,15 @@ function Contact() {
       <div className="flex flex-col lg:flex-row items-center justify-center gap-12 px-8 lg:px-40 my-20 bg-[#fafafa] py-4">
         <div className="w-full lg:w-1/2 aspect-square border rounded-3xl text-center">
           <iframe
-            title="NIMS University Jaipur Location"
-            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7592.050448069259!2d79.88810638104161!3d17.930977417197454!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1764710095877!5m2!1sen!2sin"
+            title="Ponugodu work location"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d474.82744780823043!2d79.9468660078956!3d17.809567192481538!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a337d482fff1f37%3A0xd1e4e18f3c6909fb!2sPonugodu%2C%20Telangana%20506134!5e0!3m2!1sen!2sin!4v1781283443941!5m2!1sen!2sin"
             width="100%"
             height="100%"
             className="rounded-3xl "
-            allowFullScreen=""
+            allowFullScreen="false"
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
           ></iframe>
-         
         </div>
         <div className="w-full lg:w-1/2">
           <form
@@ -154,7 +151,7 @@ function Contact() {
                   placeholder={item}
                   className="outline-0 border border-[#d5d5d5] rounded-[2rem] bg-white p-4 w-full placeholder:capitalize placeholder:text-black"
                 />
-              )
+              ),
             )}
 
             <button
@@ -167,7 +164,7 @@ function Contact() {
           </form>
         </div>
       </div>
-      <div className="px-18 pb-12">
+      <div className="pb-12">
         <Logos />
       </div>
       {showScroll && (

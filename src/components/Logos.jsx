@@ -2,27 +2,27 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
-
+import logo1 from "../assets/logo1.png";
+import logo2 from "../assets/logo2.png";
+import logo3 from "../assets/logo3.png";
+import logo4 from "../assets/logo4.png";
 const logos = [
-  "https://www.vhv.rs/dpng/d/437-4379409_donate-charity-png-photos-charity-logo-transparent-png.png",
-  "https://tse4.mm.bing.net/th?id=OIP.uxyyGB6qWl4f4QlFeDecQwHaFZ&pid=Api&P=0&h=180",
-  "https://tse4.mm.bing.net/th?id=OIP.DTLivK8j_LEA5ecjTUnbQwHaHk&pid=Api&P=0&h=180",
-  "https://tse3.mm.bing.net/th?id=OIP.2l9_zeHasE0JyDOS4jkt3wHaHa&pid=Api&P=0&h=180",
-  "https://tse4.mm.bing.net/th?id=OIP.uxyyGB6qWl4f4QlFeDecQwHaFZ&pid=Api&P=0&h=180",
-  "https://tse4.mm.bing.net/th?id=OIP.DTLivK8j_LEA5ecjTUnbQwHaHk&pid=Api&P=0&h=180",
-  "https://tse3.mm.bing.net/th?id=OIP.2l9_zeHasE0JyDOS4jkt3wHaHa&pid=Api&P=0&h=180",
+  logo1,
+  logo2,
+  logo3,
+  logo4,
 ];
 
 const Logos = () => {
   const settings = {
     infinite: true, 
-    speed: 1500, 
+    speed: 1000, 
     slidesToShow: 4, 
     slidesToScroll: 1, 
     autoplay: true, 
-    autoplaySpeed:0, 
+    autoplaySpeed:20, 
     pauseOnHover: true, 
-    cssEase: "linear", 
+    cssEase: "ease-in-out", 
     arrows: false, 
     draggable: true, 
     responsive: [
@@ -36,19 +36,19 @@ const Logos = () => {
       },
       {
         breakpoint: 480, 
-        settings: { slidesToShow: 1 }
+        settings: { slidesToShow: 2 }
       }
     ]
   };
 
   return (
-    <div className="w-full px-6">
+    <div className="w-full ">
       <Slider {...settings}>
         {logos.map((logo, i) => (
           <div key={i} className="flex justify-center items-center px-4">
             <img
               src={logo}
-              className="h-24 object-contain grayscale hover:grayscale-0 transition-all duration-300"
+              className="h-24 object-contain  transition-all duration-300"
               alt="logo"
             />
           </div>
